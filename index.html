@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">    
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css" />
         <title>Reservia</title>
     </head>
@@ -10,18 +12,18 @@
     <body>
         
         <header>
+            <img src="images/Reservia@3x.png" alt= "Reservia" id="logo"/>
 
-            <img src="images/Reservia@3x.png" alt= "Reservia"/>
-
-            <nav>
-                <ul>
-                    <li><a href="#section_hebergements">Hébergements</a></li>
-                    <li><a href="#activites">Activités</a></li>
-                </ul>
-            </nav>
-
-            <a href="#s'inscrire">S'inscrire</a>
-
+            <div id="navigation">
+                <nav>
+                   <ul>
+                      <li><a href="#section_hebergements">Hébergements</a></li>
+                       <li><a href="#activites">Activités</a></li>
+                   </ul>
+                </nav>
+                
+                <a href="#s'inscrire" id="insciption">S'inscrire</a>
+           </div>
         </header>
         
         <main>
@@ -43,33 +45,49 @@
                 <!-- FILTRES -->
                 <div id="bloc_filtres">
 
-                    <p>Filtres</p>
+                    
 
-                    <div id="boutons_filtres">
+                    
 
-                      
+                        <p class="filtres">Filtres</p>
                             <button class="filtres">
-                                    <i class="fas fa-money-bill-wave"></i>
+                                <div class="picto">
+                                    <i class="fas fa-money-bill-wave" class="picto"></i>
+                                </div>
+                                <div class="txt">
                                     <p>Économique</p>
+                                </div>
                             </button>
                        
                             <button class="filtres">
+                                <div class="picto">
                                     <i class="fas fa-child"></i>
-                                    <p>Familial</p> 
+                                </div>
+                                <div class="txt">
+                                    <p>Familial</p>
+                                </div> 
                             </button>
 
                             <button class="filtres">
+                                <div class="picto">
                                     <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="txt">
                                     <p>Romantique</p>
+                                </div>
                             </button>
                        
                             <button class="filtres">
+                                <div class="picto">
                                     <i class="fas fa-dog"></i>
+                                </div>
+                                <div class="txt">
                                     <p>Animaux autorisés</p>
+                                </div>
                             </button>
                       
 
-                    </div>
+                    
 
                 </div>
 
@@ -87,17 +105,24 @@
              <section id="section_hebergements">
                 
                 <!-- BLOC HÉBERGEMENTS À MARSEILLE -->
-                <section id="bloc_hebergements">
+                <section id="hebergements_marseille">
                     <h2>Hébergements à Marseille</h2>
 
+
+                <!-- LISTE DES HÉBERGEMENTS-->
+                <div id="bloc_hebergements">
 
                     <!-- FICHE INDIVIDUELLE HÉBERGEMENT -->
                     <article class="hebergements">
                         <a href="https://">
-                             <img src="images/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge de la Canneblière">
-                        
-                             <strong>Auberge de la Cannebière</strong>
-                             <p>Nuit à partir de <em>25€</em></p>
+                            <div class="h_img">
+                            <img src="images/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge de la Canneblière" class="img">
+                            </div>
+                            
+                        <div class="h_txt">
+                            <p class="nom">Auberge de la Cannebière</p>
+                            <p>Nuit à partir de <i class="prix">25€</i></p>
+                            
                         </a>
                              <div class="notes">
                                 <i class="fas fa-star"></i>
@@ -106,16 +131,21 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                              </div>
-                       
+                        </div>
                     </article>
-                    <!-- -->
-                    
+                    <!---->
+
+                    <!---->     
                     <article class="hebergements">
                         <a href="https://">
-                             <img src="images/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
-                        
-                             <strong>Hôtel du port</strong>
-                             <p>Nuit à partir de <em>52€</em></p>
+                            <div class="h_img">
+                            <img src="images/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge de la Canneblière" class="img">
+                            </div>
+                            
+                        <div class="h_txt">
+                            <p class="nom">Auberge de la Cannebière</p>
+                            <p>Nuit à partir de <i class="prix">25€</i></p>
+                            
                         </a>
                              <div class="notes">
                                 <i class="fas fa-star"></i>
@@ -124,24 +154,75 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                              </div>
-                       
+                        </div>
                     </article>
+                    <!---->
 
+                     <!---->     
+                     <article class="hebergements">
+                        <a href="https://">
+                            <div class="h_img">
+                            <img src="images/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge de la Canneblière" class="img">
+                            </div>
+                            
+                        <div class="h_txt">
+                            <p class="nom">Auberge de la Cannebière</p>
+                            <p>Nuit à partir de <i class="prix">25€</i></p>
+                            
+                        </a>
+                             <div class="notes">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                             </div>
+                        </div>
+                    </article>
+                    <!---->
+                     <!---->     
+                     <article class="hebergements">
+                        <a href="https://">
+                            <div class="h_img">
+                            <img src="images/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge de la Canneblière" class="img">
+                            </div>
+                            
+                        <div class="h_txt">
+                            <p class="nom">Auberge de la Cannebière</p>
+                            <p>Nuit à partir de <i class="prix">25€</i></p>
+                            
+                        </a>
+                             <div class="notes">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                             </div>
+                        </div>
+                    </article>
+                    <!---->
+                    
+                </div>
                     <button>Afficher plus</button>
 
                 </section>
 
                 <!-- BLOC LES PLUS POPULAIRES -->
-                <section>
+                <section id="section_populaires">
                     <h2>Les plus populaires</h2>
+
+                    <!-- LISTE DES HÉBERGEMENTS POPULAIRES-->
+                <div id="bloc_populaires">
 
                     <!-- FICHE INDIVIDUELLE HÉBERGEMENT POPULAIRE -->
                     <article class="hebergements_populaires">
                         <a href="https://">
-                             <img src="images/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
-                        
-                             <strong>Hôtel Le soleil du matin</strong>
-                             <p>Nuit à partir de <em>128€</em></p>
+                            <div class="p_img">
+                                 <img src="images/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
+                            </div>
+                             <p class="nom">Hôtel Le soleil du matin</strong>
+                             <p>Nuit à partir de <i class="prix">28€</i></p>
                         </a>
                              <div class="notes">
                                 <i class="fas fa-star"></i>
@@ -153,22 +234,7 @@
                     </article>
                     <!-- -->
                     
-                    <article class="hebergements_populaires">
-                        <a href="https://">
-                             <img src="images/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au cœur de l'eau Chambres d'hôtes">
-                        
-                             <strong>Au cœur de l'eau Chambres d'hôtes</strong>
-                             <p>Nuit à partir de <em>71€</em></p>
-                        </a>
-                             <div class="notes">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                             </div>
-                       
-                    </article>
+                </div>    
                 </section>
 
              </section>
