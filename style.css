@@ -4,6 +4,7 @@ html {
   font-family: 'Raleway', sans-serif;
   color: #000000;
   margin: 3.75%;
+  
 }
 
 input,
@@ -167,6 +168,7 @@ li{
   margin-right: 44px ;
   flex-wrap: wrap;
   text-align: center;
+  
 }
 
 .filtres{
@@ -184,6 +186,7 @@ li{
   font-weight: 700;
   margin-right: 32px;
   margin-bottom: 32px;
+  flex-shrink: 0;
 }
 
 .filtres:first-child{
@@ -240,7 +243,8 @@ li{
     background-color: #F2F2F2;
     border-radius: 29px 29px 29px 29px;
     padding:56px;
-    margin-right: 48px;}
+    margin-right: 48px;
+  }
 
   #bloc_hebergements{  
     display: flex;
@@ -249,7 +253,7 @@ li{
     align-items: flex-start;
     justify-content: space-between;
     font-size: 19px;
-    
+   
     
   }
 
@@ -301,10 +305,64 @@ li{
   #section_populaires{
     background-color: #F2F2F2;
     border-radius: 29px 29px 29px 29px;
-    padding:56px;
     align-items: flex-start;
-    width: 560px;
+    width: 563px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding:56px;
+   }
+
+   #section_populaires:nth-child(2){
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+   }
+
+   #p_titres{
+     display: flex;
+     align-items: baseline;
+     justify-content: space-between;
+     
+}
+
+
+
+  #bloc_populaires{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     
   }
 
+  .hebergements_populaires{
+    background-color: #ffffff;
+    border-radius: 16px 16px 16px 16px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    margin-top: 32px;
+   border: 4px solid;
+   border-color: #ffffff;
+   width: 344px;
+   
+  }
+
+
   
+  
+  .p_img{
+    display: flex;
+    width: 145px;
+    height: 145px;}
+
+  .p_txt{
+    width: 212px;
+  }
+
+  .img_pop{
+    width: 100%;
+    height: 100%;
+    border-radius: 16px 0px 0px 16px;
+    }
