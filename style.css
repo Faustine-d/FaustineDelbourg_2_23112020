@@ -386,7 +386,7 @@ li{
       flex-direction: row;
       justify-content: space-between;
       height: 30%;
-      flex-basis: 25%;
+     
       
 
     }
@@ -396,16 +396,15 @@ li{
     background-color: #ffffff;
     border-radius: 16px 16px 16px 16px;
     box-shadow:0px 3px 25px #E3E3E3;
-   
-    flex-basis: 25%;
     align-content: stretch;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    flex-flow: column wrap;
+    
     align-items: stretch;
     margin-right: 2.75VW;
-    justify-content: space-between;
+    
+    
    
    
     }
@@ -413,9 +412,7 @@ li{
     .a2{
       display: flex;
       flex-direction: column;
-      flex-basis: 25%;
-      
-
+    
     }
 
   
@@ -423,7 +420,7 @@ li{
 
     .a_img{
       display: flex;
-      height: 388px;
+   
      
     }
 
