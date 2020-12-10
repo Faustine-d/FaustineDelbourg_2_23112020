@@ -387,9 +387,6 @@ li{
       justify-content: space-between;
       height: 30%;
       margin-bottom: 2.75vw;
-     
-      
-
     }
 
     .activites{
@@ -401,30 +398,24 @@ li{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    
     align-items: stretch;
     margin-right: 2.75VW;
     margin-bottom: 2.75vw;
-    
-    
-   
-   
     }
 
-    .a2{
+    /*.a2{
       display: flex;
       flex-direction: column;
+    }*/
+    
       
-    
-    }
-    
-  
+   /* .activites article:nth-child(2){
+      height:2px;
+    }*/
 
 
     .a_img{
       display: flex;
-   
-     
     }
 
     .a_txt{
