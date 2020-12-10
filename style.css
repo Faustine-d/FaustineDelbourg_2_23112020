@@ -386,6 +386,7 @@ li{
       flex-direction: row;
       justify-content: space-between;
       height: 30%;
+      flex-basis: 25%;
       
 
     }
@@ -398,7 +399,7 @@ li{
    
     flex-basis: 25%;
     align-content: stretch;
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     flex-flow: column wrap;
@@ -409,13 +410,15 @@ li{
    
     }
 
-    .activites:nth-child(2){
+    .a2{
+      display: flex;
       flex-direction: column;
+      flex-basis: 25%;
+      
+
     }
-    .activites:nth-child(3){
-      flex-direction: column;
-    }
-   
+
+  
 
 
     .a_img{
