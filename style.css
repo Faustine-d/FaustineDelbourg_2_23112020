@@ -130,6 +130,7 @@ li:hover{
 li:active{
   text-decoration-line: underline;
   text-underline-offset: -4.3vw;
+  -webkit-text-decoration-line:underline;
   text-decoration-thickness: 6px;
 }
 
@@ -167,7 +168,7 @@ li:active{
   height: 3.5vw ;
   border: 1px solid;
   border-color: #f2f2f2;
-  border-radius: 16px 0px 0px 16px;
+  border-radius: 1vw 0vw 0vw 1vw;
   background-color: #F2F2F2;
   font-size: 1.1vw !important;
 }
@@ -197,7 +198,7 @@ input#champ_texte{
   width: 9vw;
   background-color: #0065FC;
   color: #ffffff;
-  border-radius: 0px 16px 16px 0px;
+  border-radius: 0vw 1vw 1vw 0vw;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 1.25vw;
@@ -226,7 +227,7 @@ input#champ_texte{
   flex-wrap: nowrap;
   border: 2px solid;
   height: 3.5vw;
-  border-radius: 32px 32px 32px 32px ;
+  border-radius: 2vw 2vw 2vw 2vw ;
   border-color: #D9D9D9;
   align-items: center;
   justify-content: center;
@@ -247,7 +248,7 @@ input#champ_texte{
 .picto{
   width:3.5vw ;
   height: 3.5vw ;
-  border-radius: 32px 32px 32px 32px;
+  border-radius: 2vw 2vw 2vw 2vw ;
   background-color: #DEEBFF;
   color: #0065FC;
   
@@ -282,7 +283,7 @@ input#champ_texte{
 }
 
 #i_picto{
-  border-radius: 32px 32px 32px 32px;
+  border-radius: 2vw 2vw 2vw 2vw ;
   color: #0065FC;
  
   width: 1.7vw;
@@ -315,7 +316,7 @@ input#champ_texte{
 
   #hebergements_marseille{
     background-color: #F2F2F2;
-    border-radius: 29px 29px 29px 29px;
+    border-radius: 2vw 2vw 2vw 2vw ;
     padding:2.5vw;
     margin-right: 2.75vw;
     width: 75vw; 
@@ -348,7 +349,7 @@ input#champ_texte{
     margin-right: 2vw;
     background-color: #ffffff;
     border: 5px solid #ffffff;
-    border-radius: 16px 16px 16px 16px;
+    border-radius: 1vw 1vw  1vw 1vw;
     box-shadow:0px 3px 25px #E3E3E3;
     display: flex;
     flex-direction: column;
@@ -364,7 +365,7 @@ input#champ_texte{
   .h_img{
     overflow: hidden;
     height:8vw;
-    border-radius: 16px 16px 0px 0px;
+    border-radius: 1vw 1vw 0vw 0vw;
 
     
    
@@ -372,17 +373,23 @@ input#champ_texte{
 
   .img{
     width: 100%;
-   transform: translateY(-5%);
-    
-   
+   transform: translateY(-25%);
     }
 
-   
+  .img2{
+      width: 100%;
+     transform: translateY(-10%);
+      }
+
+  .img3{
+      width: 100%;
+     transform: translateY(-40%);
+      }
 
   .h_txt{
     padding: 0.8vw;
     width: 100%;
-    border-radius: 16px 16px 16px 16px;
+    border-radius:  1vw 1vw  1vw 1vw; ;
     
   }
 
@@ -406,7 +413,7 @@ input#champ_texte{
     padding:2.5vw;
     margin: 0px;
     background-color: #F2F2F2;
-    border-radius: 29px 29px 29px 29px;
+    border-radius: 2vw 2vw  2vw 2vw;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -434,7 +441,7 @@ input#champ_texte{
 
   .hebergements_populaires{
     background-color: #ffffff;
-    border-radius: 16px 16px 16px 16px;
+    border-radius: 1vw 1vw  1vw 1vw;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -464,7 +471,7 @@ input#champ_texte{
   .img_pop{
     width: 100%;
     height: 100%;
-    border-radius: 16px 0px 0px 16px;
+    border-radius: 1vw 0vw 0vw 1vw;
     }
 
     /*ACTIVITÉS*/
@@ -495,7 +502,7 @@ input#champ_texte{
       margin-top: 2.75vw;
 
     background-color: #ffffff;
-    border-radius: 16px 16px 16px 16px;
+    border-radius: 1vw 1vw  1vw 1vw;;
     box-shadow:0px 3px 25px #E3E3E3;
     align-content: stretch;
     display: flex;
@@ -526,7 +533,7 @@ input#champ_texte{
       width: 100%;
       overflow: hidden;
       
-      border-radius: 16px 16px 0px 0px;
+      border-radius: 1vw 1vw 1vw 1vw;
 
     }
 
