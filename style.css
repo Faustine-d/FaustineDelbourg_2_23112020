@@ -225,7 +225,7 @@ input#champ_texte{
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  border: 2px solid;
+  border: 0.15vw solid;
   height: 3.5vw;
   border-radius: 2vw 2vw 2vw 2vw ;
   border-color: #D9D9D9;
@@ -344,11 +344,11 @@ input#champ_texte{
 
 
   .hebergements{
-    height: 14vw;
+    
     margin-bottom: 2vw;
     margin-right: 2vw;
     background-color: #ffffff;
-    border: 5px solid #ffffff;
+    border: 0.3vw solid #ffffff;
     border-radius: 1vw 1vw  1vw 1vw;
     box-shadow:0px 3px 25px #E3E3E3;
     display: flex;
@@ -388,6 +388,7 @@ input#champ_texte{
 
   .h_txt{
     padding: 0.8vw;
+    
     width: 100%;
     border-radius:  1vw 1vw  1vw 1vw; ;
     
@@ -397,6 +398,10 @@ input#champ_texte{
     font-weight: 700;
     font-style: normal;
     font-size: 1.1vw;
+  }
+
+  p.nom{
+    padding-bottom: 0.2vw;
   }
 .notes{
   color: #0065FC;
@@ -426,10 +431,14 @@ input#champ_texte{
      display: flex;
      flex-direction: row;
      align-items: baseline;
-   
      
 }
 
+
+
+ /* i.fas.fa-chart-line{
+  width: 20px;
+  }*/
 
   #bloc_populaires{
     display: flex;
@@ -449,7 +458,7 @@ input#champ_texte{
     margin-top: 2vw;
     box-shadow:0px 3px 25px #E3E3E3;
    
-   border: 5px solid;
+   border: 0.3vw solid;
    border-color: #ffffff;
    width: 95%;
    
@@ -465,7 +474,15 @@ input#champ_texte{
   .p_txt{
    width: 13vw;
    padding: 1vw;
+  
 
+  }
+
+  .p_notes{
+    color: #0065FC;
+    font-size: 0.75vw;
+    padding-top: 1.2vw;
+    padding-bottom: 0vw;
   }
 
   .img_pop{
