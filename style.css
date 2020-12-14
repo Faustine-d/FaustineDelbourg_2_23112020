@@ -550,7 +550,7 @@ input#champ_texte{
       width: 100%;
       overflow: hidden;
       
-      border-radius: 1vw 1vw 1vw 1vw;
+      border-radius: 1vw 1vw 0vw 0vw;
 
     }
 
