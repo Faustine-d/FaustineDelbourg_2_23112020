@@ -5,10 +5,15 @@
   html{
     font-family: 'Raleway', sans-serif;
     color: #000000;
-    margin-top: 2.5vw;
-   
-  }
-
+    margin-top: 2.5vw;}
+      /*phone*/
+      @media only screen and (max-width: 600px) {
+      html{
+      margin-top: 3.5vw;
+      margin: 0px;
+      padding: 0px;}
+    }
+    
 
 input,
 button,
@@ -24,16 +29,24 @@ textarea{
 }
 
 main{
-  margin: 3.3vw;
-  margin-top: 2.5vw;
+  margin: 2.25vw;
+  margin-top: 4vw;}
+    /*phone*/
+    @media only screen and (max-width: 600px) {
+    main{
+    margin: 0px;
+    padding: 0px;}
 }
 
 /*TITRES, TEXTES*/
 h1, h2, #bloc_filtres{
   font-weight: 700;
   font-size: 1.5vw;
-  margin: 0;
-}
+  margin: 0;}
+    /*phone*/
+    @media only screen and (max-width: 600px) {
+    h1, h2, #bloc_filtres{
+    font-size: 2.45vw;}}
 
 h2{
   padding-right: 8vw;
@@ -43,20 +56,30 @@ h3{
   font-weight: 400;
   font-size: 1.1vw;
   margin: 0;
-  margin-top: 0.5vw;
-}
+  margin-top: 0.5vw;}
+     /*phone*/
+     @media only screen and (max-width: 600px) {
+      h3{font-size: 1.8vw;}}
 
 p{
   margin: 0;
   margin: 0;
-  font-size: 1.1vw;
-}
+  font-size: 1.1vw;}
+    /*phone*/
+    @media only screen and (max-width: 600px) {
+      p{font-size: 1.8vw;}}
 
 .strong{
   font-weight: 700;
   font-size: 1.25vw;
-  font-family: 'Raleway', sans-serif;
-}
+  font-family: 'Raleway', sans-serif;}
+    /*phone*/
+    @media only screen and (max-width: 600px) {
+    .strong{
+    font-size: 2vw;}
+    }
+
+  
 
 a{
   color:#000000;
@@ -80,7 +103,6 @@ header  {
   
   margin-right: 3.5vw;
   margin-left: 3.5vw;
-  
   display: flex;
   justify-content: flex-start;
     
@@ -146,6 +168,7 @@ li:active{
 #section_haut_de_page{
   margin-bottom: 1.75vw;
 }
+
 
 /*BLOC RECHERCHE*/
 #bloc_localisation{
@@ -310,8 +333,15 @@ input#champ_texte{
     flex-wrap: nowrap;
     /*flex-wrap: wrap-reverse;*/
     justify-content: space-between;
-    align-items: stretch;
-  }
+    align-items: stretch;}
+     /*phone*/
+     @media only screen and (max-width: 600px) {
+      #section_hebergements{
+        flex-direction: column-reverse;}}
+    
+
+      
+    
 
   /*HEBERGEMENTS*/
 
@@ -320,8 +350,12 @@ input#champ_texte{
     border-radius: 2vw 2vw 2vw 2vw ;
     padding:2.5vw;
     margin-right: 2.75vw;
-    width: 75vw; 
-  }
+    width: 75vw; }
+     /*phone*/
+     @media only screen and (max-width: 600px) {
+      #hebergements_marseille{
+        background-color: #ffffff;
+        width: 100vw;}}
 
   #bloc_hebergements{  
     margin-top: 2.75%;
@@ -339,9 +373,11 @@ input#champ_texte{
 
   .h_ligne{
     display: flex;
-    flex: 1 ;
-   
-  }
+    flex: 1 ;}
+     /*phone*/
+     @media only screen and (max-width: 600px) {
+      .h_ligne{
+        flex-direction: column;}}
 
 
   .hebergements{
@@ -423,9 +459,14 @@ input#champ_texte{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: flex-start;
-    
-   }
+    align-items: flex-start;   }
+    /*phone*/
+    @media only screen and (max-width: 600px) {
+    #section_populaires{
+      width: 100vw;
+      padding: 0px;
+      border-radius: 0px;
+    }}
 
   
    #p_titres{
@@ -540,6 +581,7 @@ input#champ_texte{
       height: 12.5vw;
       display: flex;
       overflow: hidden;
+      
       }
 
       .a_img3{
@@ -679,4 +721,5 @@ button#rechercher:focus{
 article:hover{
   background-color: #DEEBFF;
   border-color: #DEEBFF;
+ 
 }
