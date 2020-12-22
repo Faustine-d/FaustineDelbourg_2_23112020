@@ -110,7 +110,8 @@ header  {
     height: 100%;}
     /*phone*/
     @media only screen and (max-width: 800px) {
-    #logo{ width: 25vw;}}
+    #logo{ width: 25vw;
+    }}
 
 #navigation{
     width: 100%;
@@ -125,7 +126,8 @@ header  {
     @media only screen and (max-width: 800px) {
     #navigation{flex-direction: column-reverse;
       align-items:flex-end;
-    flex-wrap: wrap;}}
+    flex-wrap: wrap;
+  }}
 
 
 
@@ -140,11 +142,13 @@ ul {
     margin: 0px;}
     /*phone*/
     @media only screen and (max-width: 800px) {
-    ul{ font-size: 4.25vw;}}
+    ul{ font-size: 4.25vw; flex-grow: 1;
+    }}
     
 
 li{
     margin-right: 4.5vw;}
+    /*phone*/
     @media only screen and (max-width: 800px) {
     li{ width: 100%;
     display: flex;
@@ -172,7 +176,8 @@ li:active{
     font-size: 1.1vw;}
     /*phone*/
     @media only screen and (max-width: 800px) {
-      #insciption{font-size: 4.25vw;}}
+      #insciption{font-size: 4.25vw;
+        margin-bottom: 10vw;}}
 
 /* SECTION HAUT DE PAGE*/
 #section_haut_de_page{
