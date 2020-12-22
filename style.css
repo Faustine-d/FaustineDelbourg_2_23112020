@@ -123,20 +123,22 @@ header  {
     align-items:flex-start;
     flex-wrap: nowrap;
 }
+/*phone*/
+@media only screen and (max-width: 800px) {
+  #navigation{flex-direction: column-reverse;}}
 
 
 
 ul {
     display: flex;
     flex-direction: row;
-
     align-items: flex-start;
     flex-wrap: nowrap;  
     list-style-type: none; 
     font-size: 1.1vw;
     padding: 0px;
-    margin: 0px;
-}
+    margin: 0px;}
+    
 
 li{
     margin-right: 4.5vw;
@@ -535,11 +537,13 @@ input#champ_texte{
 
     #bloc_activités{
       margin-bottom: 2.75vw; 
-      
       display: flex;
       flex-direction: row;
-      align-items: stretch;
-    }
+      align-items: stretch; }
+        /*phone*/
+        @media only screen and (max-width: 800px) {
+          #bloc_activités{
+            flex-direction: column;}}
 
     .a_colonne{
      margin-right: 2.75VW;
@@ -607,22 +611,21 @@ input#champ_texte{
     }
 
 
-    /*FOOTER*/
+/*FOOTER*/
+
 footer{
   background-color: #F2F2F2;
   margin: 0px;
   padding: 3.5vw;
-  margin-top: 4.5vw;;
-
-}
+  margin-top: 4.5vw;}
 
 .footer{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  
-
-}
+  justify-content: space-between;}
+  /*phone*/
+  @media only screen and (max-width: 800px) {
+    .footer{flex-direction: column;}}
 
 
 .footer_txt{
