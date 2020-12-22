@@ -277,7 +277,7 @@ input#champ_texte{
   text-align: center;}
   /*phone*/
   @media only screen and (max-width: 800px) {
-  #bloc_filtres{font-size: 4.8vw; height: 13vw;}}
+  #bloc_filtres{font-size: 4.8vw; height: 13vw; margin-bottom: 8vw;}}
 
 .filtres{
   display: flex;
@@ -348,8 +348,10 @@ input#champ_texte{
 /*BLOC INFORMATIONS*/
 .informations{
   display: flex;
-  align-items: baseline;
-}
+  align-items: baseline;}
+  /*phone*/
+  @media only screen and (max-width: 800px) {
+    .informationsmargin-top: 8vw;}}
 
 #i_picto{
   border-radius: 2vw 2vw 2vw 2vw ;
