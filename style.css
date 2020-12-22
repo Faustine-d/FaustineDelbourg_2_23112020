@@ -210,6 +210,7 @@ li:active{
   #bouton_geolocalisation{
   height: 13vw;
   width: 13vw;
+  border-radius: 3.5vw 0vw 0vw 3.5vw;
   }}
 
 #champ_texte{
@@ -226,12 +227,12 @@ li:active{
   @media only screen and (max-width: 800px) {
   #champ_texte{
   font-size: 4.8vw;
-  height: 12.7vw;}}
+  height: 12.7vw;
+  width: 62vw;}}
     
 
 input#champ_texte{
   padding-left: 1.1vw;
-
 }
 
 #rechercher{
@@ -250,6 +251,8 @@ input#champ_texte{
   #rechercher{
   font-size: 4.8vw;
   height: 13vw;
+  width: 13vw;
+  border-radius: 3.5vw 3.5vw 3.5vw 3.5vw;
   }}
 
 
@@ -269,7 +272,7 @@ input#champ_texte{
   text-align: center;}
   /*phone*/
   @media only screen and (max-width: 800px) {
-  #bloc_filtres{font-size: 4.8vw;}}
+  #bloc_filtres{font-size: 4.8vw; height: 13vw;}}
 
 .filtres{
   display: flex;
@@ -289,7 +292,8 @@ input#champ_texte{
   flex-shrink: 0;}
   /*phone*/
   @media only screen and (max-width: 800px) {
-  .filtres{font-size: 4.8vw;}}
+  .filtres{font-size: 4.8vw; height: 13vw;
+  border-radius: 7vw 7vw 7vw 7vw ;}}
   
 
 .filtres:first-child{
@@ -303,15 +307,18 @@ input#champ_texte{
   border-radius: 2vw 2vw 2vw 2vw ;
   background-color: #DEEBFF;
   color: #0065FC;
-  
   display: flex;
   align-items: center;
   justify-content: center;
   align-content: center;
   text-align: center;
   padding:0 ;
-  transform: translateX(-2px);
-}
+  transform: translateX(-2px);}
+  /*phone*/
+  @media only screen and (max-width: 800px) {
+  .picto{width: 13vw; height: 13vw;
+    border-radius: 7vw 7vw 7vw 7vw ;}}
+  
 
 .txt{
   display: flex;
@@ -435,11 +442,10 @@ input#champ_texte{
   .h_img{
     overflow: hidden;
     height:8vw;
-    border-radius: 1vw 1vw 0vw 0vw;
-
+    border-radius: 1vw 1vw 0vw 0vw;}
+    @media only screen and (max-width: 800px) {
+    .h_img{ height:30vw ;}}
     
-   
-  }
 
   .img{
     width: 100%;
@@ -537,9 +543,14 @@ input#champ_texte{
   .p_img{
     display: flex;
     width: 9vw;
-    height: 9vw; 
-  }
+    height: 9vw; }
+    /*phone*/
+    @media only screen and (max-width: 800px) {
+    .p_img{
+      width: 34vw;
+      height: 35vw;}}
 
+    
   .p_txt{
    width: 13vw;
    padding: 1vw;
