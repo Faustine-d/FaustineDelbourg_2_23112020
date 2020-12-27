@@ -61,7 +61,7 @@ h3{
   margin-top: 0.5vw;}
     /*phone*/
     @media only screen and (max-width: 600px) {
-    h3{font-size: 4.25vw; margin-top: 5vw; margin-bottom: 9vw;}}
+    h3{font-size: 4.25vw; margin-top: 4.3vw; margin-bottom: 9vw;}}
 
 p{
   margin: 0;
@@ -204,7 +204,7 @@ li:active{
   border-color: #f2f2f2;}
     /*phone*/
     @media only screen and (max-width: 600px) {
-    #bloc_localisation{height: 13vw; margin-bottom: 9.85vw;}}
+    #bloc_localisation{height: 14vw; margin-bottom: 6vw;}}
 
 #bouton_geolocalisation{
   margin:0;
@@ -215,13 +215,15 @@ li:active{
   border-color: #f2f2f2;
   border-radius: 1vw 0vw 0vw 1vw;
   background-color: #F2F2F2;
-  font-size: 1.1vw !important;}
+  font-size: 1.1vw !important;
+  text-align: center;}
     /*phone*/
     @media only screen and (max-width: 600px) {
     #bouton_geolocalisation{
-    height: 13vw;
-    width: 13vw;
+    height: 14vw;
+    width: 14vw;
     border-radius: 3.5vw 0vw 0vw 3.5vw;
+    font-size: 4.3vw !important;
   }}
 
 #champ_texte{
@@ -238,12 +240,16 @@ li:active{
     @media only screen and (max-width: 600px) {
     #champ_texte{
     font-size: 4.8vw;
-    height: 12.7vw;
-    width: 62vw;}}
+    height: 13.7vw;
+    width: 69vw;
+    }}
     
 input#champ_texte{
-  padding-left: 1.1vw;
-}
+  padding-left: 1.1vw;}
+    /*phone*/
+    @media only screen and (max-width: 600px) {
+    input#champ_texte{
+    padding-left:4.5vw;}}
 
 #rechercher{
   margin:0;
@@ -260,11 +266,12 @@ input#champ_texte{
     @media only screen and (max-width: 600px) {
     #rechercher{
     font-size: 4.8vw;
-    height: 13vw;
-    width: 13vw;
+    height: 14vw;
+    width: 14vw;
     border-radius: 3.5vw 3.5vw 3.5vw 3.5vw;
     text-indent: -9999px;
-    line-height: 0;}
+    line-height: 0;
+    transform: translateX(-2.3vw);}
       /*Remplacer le texte par la loupe*/
       #rechercher::after{
       content: "\f002";
@@ -322,7 +329,7 @@ input#champ_texte{
   border:none;}
     /*phone*/
   @media only screen and (max-width: 600px) {
-  .filtres:first-child{margin-right:60vw; margin-bottom:5.35vw;}}
+  .filtres:first-child{margin-right:60vw; margin-bottom:4vw;}}
 
 .picto{
   width:3.5vw ;
@@ -359,7 +366,7 @@ input#champ_texte{
   font-size: 1.25vw;}
   /*phone*/
   @media only screen and (max-width: 600px) {
-  .f_txt{font-size:4.8vw;padding-right:1.5vw;}}
+  .f_txt{font-size:4.8vw;padding-right:1.6vw;}}
 
 /*/////////// BLOC INFORMATIONS ///////////*/
 
@@ -387,10 +394,11 @@ input#champ_texte{
     @media only screen and (max-width: 600px) {
     #i_picto{
     width: 6.4vw;
-    height: 6.4vw;
+    height: 5.4vw;
     border-radius: 7vw 7vw 7vw 7vw ;
     margin-right: 3.2vw;
     font-size: 3vw;
+    line-height: 0vw;
 }}
 
 
@@ -405,7 +413,9 @@ input#champ_texte{
     /*phone*/
     @media only screen and (max-width: 600px) {
     #section_hebergements{
-    flex-direction: column-reverse;}}
+    flex-direction: column-reverse;
+    margin: 0vw;
+    padding: 0vw;}}
     
 /*/////////// HEBERGEMENTS ///////////*/
 
@@ -419,14 +429,18 @@ input#champ_texte{
     @media only screen and (max-width: 600px) {
     #hebergements_marseille{
     background-color: #ffffff;
-    width: 100vw;}}
+    width: 90vw;
+    margin: 0vw;
+    padding: 0vw;
+    justify-content: center;}}
 
 #bloc_hebergements{  
-  margin-top: 2.75%;}
+  margin-top: 2.75vw;}
     /*phone*/
     @media only screen and (max-width: 600px) {
       #bloc_hebergements{
-        width:95%;}}
+        width:90vw;
+      margin: 0vw;}}
  
 .h_ligne{
   display: flex;
@@ -451,8 +465,11 @@ input#champ_texte{
   /*phone*/
   @media only screen and (max-width: 600px) {
   .hebergements{
+  margin: 0vw;
+  width: 90vw;
   border: 1.3vw solid;
   border-color: #ffffff;
+  justify-content: center;
   border-radius: 3.5vw 3.5vw 3.5vw 3.5vw;}}
 
 .hebergements:last-child{
@@ -543,7 +560,8 @@ p.nom{
     /*phone*/
     @media only screen and (max-width: 600px) {
     #p_titres{
-    margin-bottom: 7vw;}}
+    margin-bottom: 7vw;
+    width: 97%;}}
 
 #bloc_populaires{
   display: flex;
@@ -563,7 +581,7 @@ p.nom{
   box-shadow:0px 3px 25px #E3E3E3;
   border: 0.3vw solid;
   border-color: #ffffff;
-  width: 100%;  }
+  width: 95%;  }
     /*phone*/
     @media only screen and (max-width: 600px) {
     .hebergements_populaires{
@@ -596,7 +614,7 @@ p.nom{
     /*phone*/
     @media only screen and (max-width: 600px) {
     .p_txt{
-    width: 40%; 
+    width: 60%; 
     height: 29vw; 
     padding-top: 3.5vw;
     padding:4vw;
@@ -608,7 +626,7 @@ p.nom{
   color: #0065FC;
   font-size: 0.75vw;}
     @media only screen and (max-width: 600px) {
-    .p_notes{font-size: 2vw;}}
+    .p_notes{font-size: 3vw;}}
 
 .img_pop{
   width: 100%;
@@ -617,7 +635,10 @@ p.nom{
     @media only screen and (max-width: 600px) {
     .img_pop{border-radius: 3.5vw 0vw 0vw 3.5vw; }}
 
-
+    /*phone*/
+    @media only screen and (max-width: 600px) {
+    .fas.fa-chart-line{
+    font-size: 6vw;}}
 
 
 /*////////////////////// ACTIVITÉS //////////////////////*/
