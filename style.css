@@ -24,6 +24,10 @@ textarea{
   background:none;
 }
 
+img{
+  object-fit:cover; 
+}
+
 /*phone*/
 @media only screen and (max-width:600px){
 body{margin:0px; padding:0px;}}
@@ -48,9 +52,7 @@ h1, h2, #bloc_filtres{
     h1, h2, #bloc_filtres{
     font-size: 5.9vw;}}
 
-h2{
-  padding-right: 8vw;
-}
+
 
 h3{
   font-weight: 400;
@@ -67,7 +69,7 @@ p{
   font-size: 1.1vw;}
     /*phone*/
     @media only screen and (max-width: 600px) {
-    p{font-size: 4.25vw;}}
+    p{font-size: 3.75vw;}}
 
 .strong{
   font-weight: 700;
@@ -123,7 +125,7 @@ header  {
     @media only screen and (max-width: 600px) {
     #navigation{
     flex-direction: column-reverse;
-    align-items:flex-end;
+    justify-content: space-between;
     flex-wrap: wrap;}}
 
 ul{
@@ -137,7 +139,8 @@ ul{
   margin: 0px;}
     /*phone*/
     @media only screen and (max-width: 600px) {
-    ul{ font-size: 4.25vw; flex-grow: 1; margin-bottom: 13.5vw;
+    ul{ font-size: 4.25vw; flex-grow: 1; margin-bottom: 13.5vw; display: flex;
+      justify-content: space-around; align-content: stretch; text-decoration-line: underline;
     }} 
 
 li{
@@ -146,7 +149,8 @@ li{
     @media only screen and (max-width: 600px) {
     li{ width: 100%;
     display: flex;
-    flex-direction: row;}}
+    flex-direction: row;
+   }}
 
 li:hover{
   text-decoration-line: underline;
@@ -169,7 +173,9 @@ li:active{
     /*phone*/
     @media only screen and (max-width: 600px) {
     #insciption{font-size: 4.25vw;
-    margin-bottom: 10vw;}}
+      margin-top: 5vw;
+      margin-bottom: 10vw;
+    }}
 
 
 
@@ -257,7 +263,16 @@ input#champ_texte{
     height: 13vw;
     width: 13vw;
     border-radius: 3.5vw 3.5vw 3.5vw 3.5vw;
-  }}
+    text-indent: -9999px;
+    line-height: 0;}
+      /*Remplacer le texte par la loupe*/
+      #rechercher::after{
+      content: "\f002";
+      font-family: "Font Awesome 5 Free";
+      text-indent: 0;
+      display: block;
+      line-height: initial;}
+    }
 
 /*/////////// BLOC FILTRES ///////////*/
 
@@ -344,7 +359,7 @@ input#champ_texte{
   font-size: 1.25vw;}
   /*phone*/
   @media only screen and (max-width: 600px) {
-  .f_txt{font-size: 4.8vw;}}
+  .f_txt{font-size:4.8vw;padding-right:1.5vw;}}
 
 /*/////////// BLOC INFORMATIONS ///////////*/
 
@@ -407,8 +422,11 @@ input#champ_texte{
     width: 100vw;}}
 
 #bloc_hebergements{  
-  margin-top: 2.75%;
-  }
+  margin-top: 2.75%;}
+    /*phone*/
+    @media only screen and (max-width: 600px) {
+      #bloc_hebergements{
+        width:95%;}}
  
 .h_ligne{
   display: flex;
@@ -430,6 +448,12 @@ input#champ_texte{
   flex-wrap: nowrap;
   flex: 1 ;
   }
+  /*phone*/
+  @media only screen and (max-width: 600px) {
+  .hebergements{
+  border: 1.3vw solid;
+  border-color: #ffffff;
+  border-radius: 3.5vw 3.5vw 3.5vw 3.5vw;}}
 
 .hebergements:last-child{
   margin-right: 0px;}
@@ -440,7 +464,9 @@ input#champ_texte{
   border-radius: 1vw 1vw 0vw 0vw;}
     /*phone*/
     @media only screen and (max-width: 600px) {
-    .h_img{ height:30vw;}}
+    .h_img{ 
+    height:30vw;
+    border-radius: 3.5vw 3.5vw 0vw 0vw;}}
     
 .img{
   width: 100%;
@@ -467,8 +493,11 @@ input#champ_texte{
 .nom, .prix{
   font-weight: 700;
   font-style: normal;
-  font-size: 1.1vw;
-  }
+  font-size: 1.1vw;}
+    /*phone*/
+    @media only screen and (max-width: 600px) {
+    .nom {font-size: 4.25vw;}
+    .prix{font-size: 3.75vw;}}
 
 p.nom{
   padding-bottom: 0.2vw;
@@ -495,17 +524,22 @@ p.nom{
     /*phone*/
     @media only screen and (max-width: 600px) {
     #section_populaires{
-    width: 100vw;
+    width: 90vw;
     padding: 0px;
     border-radius: 0px;
     margin-top: 10.65vw;
     padding-top: 11.45vw;
+    padding-bottom: 12vw;
+    padding-right: 5vw;
+    padding-left: 5vw;
     }}
 
 #p_titres{
   display: flex;
   flex-direction: row;
-  align-items: baseline;}
+  align-items: baseline;
+  justify-content: space-between;
+  width: 100%;}
     /*phone*/
     @media only screen and (max-width: 600px) {
     #p_titres{
@@ -529,8 +563,16 @@ p.nom{
   box-shadow:0px 3px 25px #E3E3E3;
   border: 0.3vw solid;
   border-color: #ffffff;
-  width: 100%; 
-  }
+  width: 100%;  }
+    /*phone*/
+    @media only screen and (max-width: 600px) {
+    .hebergements_populaires{
+    margin-bottom: 3vw ;
+    margin-top: 0px;
+    border: 1.3vw solid;
+    border-color: #ffffff;
+    border-radius: 3.5vw 3.5vw 3.5vw 3.5vw;}}
+
 
 .p_img{
   display: flex;
@@ -540,34 +582,53 @@ p.nom{
     @media only screen and (max-width: 600px) {
     .p_img{
     width: 34vw;
-    height: 35vw;}}
+    height: 35vw;
+    border-radius: 3.5vw 3.5vw 3.5vw 3.5vw}}
 
 .p_txt{
   width: 13vw;
+  height: 7vw;
   padding: 1vw;
-  }
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: space-between;}
+    /*phone*/
+    @media only screen and (max-width: 600px) {
+    .p_txt{
+    width: 40%; 
+    height: 29vw; 
+    padding-top: 3.5vw;
+    padding:4vw;
+    padding-bottom:2vw;
+
+    }}
 
 .p_notes{
   color: #0065FC;
-  font-size: 0.75vw;
-  padding-top: 2.1vw;
-  padding-bottom: 0vw;
-  }
+  font-size: 0.75vw;}
+    @media only screen and (max-width: 600px) {
+    .p_notes{font-size: 2vw;}}
 
 .img_pop{
   width: 100%;
   height: 100%;
-  overflow: hidden;
-  border-radius: 1vw 0vw 0vw 1vw;
-  }
+  border-radius: 1vw 0vw 0vw 1vw; }
+    @media only screen and (max-width: 600px) {
+    .img_pop{border-radius: 3.5vw 0vw 0vw 3.5vw; }}
+
 
 
 
 /*////////////////////// ACTIVITÉS //////////////////////*/
 
 #section_activites{
-  margin-top: 4.5%;
-  }
+  margin-top: 4.5%;}
+    /*phone*/
+    @media only screen and (max-width: 600px) {
+    #section_activites{
+      width: 95vw;
+    padding:2.5vw ;}}
 
 #bloc_activités{
   margin-bottom: 2.75vw; 
@@ -607,13 +668,11 @@ p.nom{
 .a_img{
   height: 27vw;
   display: flex;
-  overflow: hidden;
 }
 
 .a_img2{
   height: 12.5vw;
   display: flex;
-  overflow: hidden;
   }
 
 .a_img3{
@@ -623,7 +682,6 @@ p.nom{
 
 .img_act{
   width: 100%;
-  overflow: hidden;
   border-radius: 1vw 1vw 0vw 0vw;      
   }
   
