@@ -498,7 +498,7 @@ input#champ_texte{
 
 .img2{
   width: 100%;
-  transform: translateY(-10%);
+  
   }
 
 .img3{
@@ -670,7 +670,8 @@ p.nom{
     @media only screen and (max-width: 600px) {
     #bloc_activités{
     flex-direction: column;
-    margin-top: 7vw;}}
+    margin-top: 7vw;
+  width: 90vw;}}
 
 .a_colonne{
   margin-right: 2.75VW;
@@ -678,8 +679,10 @@ p.nom{
   flex-direction: column;
   flex: 1;
   align-items: stretch;
-  align-content: stretch;
-  }
+  align-content: stretch;}
+    /*phone*/
+    @media only screen and (max-width: 600px) {
+    .a_colonne{margin-right: 0vw;}}
    
 
 .a_colonne:last-child{
@@ -714,14 +717,14 @@ p.nom{
     /*phone*/
     @media only screen and (max-width: 600px) {
     .a_img, .a_img2, .a_img3{
-    height: 36vw;}}
+    height: 36vw; width: 100%;}}
 
 .img_act{
   width: 100%;
   border-radius: 1vw 1vw 0vw 0vw;}
     /*phone*/
     @media only screen and (max-width: 600px) {
-    .img_act{border-radius: 3.5vw 3.5vw 0vw 0vw;}}
+    .img_act{border-radius: 3.5vw 3.5vw 0vw 0vw;width: 100%; object-fit: cover; }}
   
 .a_txt{
   padding: 1vw;}
@@ -738,7 +741,7 @@ footer{
   margin-top: 4.5vw;}
     /*phone*/
     @media only screen and (max-width: 600px) {
-    footer{padding-top: 4vw; padding-bottom: 13vw;}}
+    footer{padding-top: 4vw; padding-bottom: 13vw; padding-left: 7vw;}}
 
 .footer{
   display: flex;
@@ -841,3 +844,4 @@ article:hover{
   border-color: #DEEBFF;
  
 }
+
