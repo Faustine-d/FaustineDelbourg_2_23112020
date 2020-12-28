@@ -78,7 +78,9 @@ p{
     /*phone*/
     @media only screen and (max-width: 600px) {
     .strong{
-    font-size: 4.8vw;}
+    font-size: 4.8vw;
+    padding-top: 9vw;
+    padding-bottom: 5vw;}
     }
 
 a{
@@ -431,16 +433,20 @@ input#champ_texte{
     background-color: #ffffff;
     width: 90vw;
     margin: 0vw;
+    margin-top: 10.66vw;
     padding: 0vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
     justify-content: center;}}
 
 #bloc_hebergements{  
   margin-top: 2.75vw;}
     /*phone*/
     @media only screen and (max-width: 600px) {
-      #bloc_hebergements{
-        width:90vw;
-      margin: 0vw;}}
+    #bloc_hebergements{
+    width:90vw;
+    margin: 0vw;
+    margin-top: 5vw;}}
  
 .h_ligne{
   display: flex;
@@ -448,7 +454,8 @@ input#champ_texte{
     /*phone*/
     @media only screen and (max-width: 600px) {
     .h_ligne{
-    flex-direction: column;}}
+    flex-direction: column;
+    width: 90vw;}}
 
 .hebergements{
   margin-bottom: 2vw;
@@ -460,17 +467,16 @@ input#champ_texte{
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  flex: 1 ;
-  }
-  /*phone*/
-  @media only screen and (max-width: 600px) {
-  .hebergements{
-  margin: 0vw;
-  width: 90vw;
-  border: 1.3vw solid;
-  border-color: #ffffff;
-  justify-content: center;
-  border-radius: 3.5vw 3.5vw 3.5vw 3.5vw;}}
+  flex: 1 ; }
+    /*phone*/
+    @media only screen and (max-width: 600px) {
+    .hebergements{
+    margin: 0vw;
+    margin-bottom: 3.5vw;
+    border: 1.3vw solid;
+    border-color: #ffffff;
+    justify-content: center;
+    border-radius: 3.5vw 3.5vw 3.5vw 3.5vw;}}
 
 .hebergements:last-child{
   margin-right: 0px;}
@@ -482,7 +488,7 @@ input#champ_texte{
     /*phone*/
     @media only screen and (max-width: 600px) {
     .h_img{ 
-    height:30vw;
+    height:33vw;
     border-radius: 3.5vw 3.5vw 0vw 0vw;}}
     
 .img{
@@ -503,9 +509,10 @@ input#champ_texte{
 .h_txt{
   padding: 0.8vw;
   width: 100%;
-  border-radius:  1vw 1vw 1vw 1vw; ;
-    
-  }
+  border-radius:  1vw 1vw 1vw 1vw;}
+    /*phone*/
+    @media only screen and (max-width: 600px) {
+    .h_txt{height: 17vw; padding: 3vw; padding-bottom:0.5vw; }}
 
 .nom, .prix{
   font-weight: 700;
@@ -513,18 +520,19 @@ input#champ_texte{
   font-size: 1.1vw;}
     /*phone*/
     @media only screen and (max-width: 600px) {
-    .nom {font-size: 4.25vw;}
-    .prix{font-size: 3.75vw;}}
+    .nom {font-size: 4.25vw;margin-bottom:1vw;}
+    .prix{font-size: 3.75vw; }}
 
 p.nom{
-  padding-bottom: 0.2vw;
-  }
+  padding-bottom: 0.2vw;}
 
 .notes{
   color: #0065FC;
   font-size: 0.75vw;
-  margin-top: 0.5vw;
-}
+  margin-top: 0.5vw;}
+    /*phone*/
+    @media only screen and (max-width: 600px) {
+    .notes{font-size: 3vw;padding-top: 1vw;}}
   
 /*/////////// HÉBERGEMENTS POPULAIRES ///////////*/
 
@@ -546,7 +554,7 @@ p.nom{
     border-radius: 0px;
     margin-top: 10.65vw;
     padding-top: 11.45vw;
-    padding-bottom: 12vw;
+    padding-bottom: 10vw;
     padding-right: 5vw;
     padding-left: 5vw;
     }}
@@ -561,7 +569,8 @@ p.nom{
     @media only screen and (max-width: 600px) {
     #p_titres{
     margin-bottom: 7vw;
-    width: 97%;}}
+    width: 98%;
+    }}
 
 #bloc_populaires{
   display: flex;
@@ -586,6 +595,7 @@ p.nom{
     @media only screen and (max-width: 600px) {
     .hebergements_populaires{
     margin-bottom: 3vw ;
+    width: 87.4vw;
     margin-top: 0px;
     border: 1.3vw solid;
     border-color: #ffffff;
@@ -648,8 +658,8 @@ p.nom{
     /*phone*/
     @media only screen and (max-width: 600px) {
     #section_activites{
-      width: 95vw;
-    padding:2.5vw ;}}
+      width: 90vw;
+    padding:5vw ;}}
 
 #bloc_activités{
   margin-bottom: 2.75vw; 
@@ -659,7 +669,8 @@ p.nom{
     /*phone*/
     @media only screen and (max-width: 600px) {
     #bloc_activités{
-    flex-direction: column;}}
+    flex-direction: column;
+    margin-top: 7vw;}}
 
 .a_colonne{
   margin-right: 2.75VW;
@@ -678,37 +689,45 @@ p.nom{
 .activites{
   margin-top: 2.75vw;
   background-color: #ffffff;
-  border-radius: 1vw 1vw  1vw 1vw;;
+  border-radius: 1vw 1vw  1vw 1vw;
   box-shadow:0px 3px 25px #E3E3E3;
   align-content: stretch;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  }
+  flex-direction: row;}
+    /*phone*/
+    @media only screen and (max-width: 600px) {
+    .activites{
+    border-radius: 3.5vw 3.5vw 3.5vw 3.5vw;
+    margin-bottom: 3vw;}}
+    
 
 .a_img{
   height: 27vw;
-  display: flex;
-}
-
+  display: flex;}
 .a_img2{
   height: 12.5vw;
-  display: flex;
-  }
-
+  display: flex;}
 .a_img3{
   height: 8.2vw;
-  display: flex;
-  }
+  display: flex;}
+    /*phone*/
+    @media only screen and (max-width: 600px) {
+    .a_img, .a_img2, .a_img3{
+    height: 36vw;}}
 
 .img_act{
   width: 100%;
-  border-radius: 1vw 1vw 0vw 0vw;      
-  }
+  border-radius: 1vw 1vw 0vw 0vw;}
+    /*phone*/
+    @media only screen and (max-width: 600px) {
+    .img_act{border-radius: 3.5vw 3.5vw 0vw 0vw;}}
   
 .a_txt{
-  padding: 1vw;
-}
+  padding: 1vw;}
+    /*phone*/
+    @media only screen and (max-width: 600px) {
+    .a_txt{height: 5vw; padding: 5vw;}}
 
 /*/////////// FOOTER ///////////*/
 
@@ -717,6 +736,9 @@ footer{
   margin: 0px;
   padding: 3.5vw;
   margin-top: 4.5vw;}
+    /*phone*/
+    @media only screen and (max-width: 600px) {
+    footer{padding-top: 4vw; padding-bottom: 13vw;}}
 
 .footer{
   display: flex;
@@ -728,8 +750,10 @@ footer{
 
 
 .footer_txt{
-  padding-top: 0.8vw;
-}
+  padding-top: 0.8vw;}
+    /*phone*/
+    @media only screen and (max-width: 600px) {
+    .footer_txt{padding-top:3vw ;}}
 
 .liens_footer{
   margin-top: 1vw;
