@@ -41,6 +41,9 @@ main{
     margin:0px;
     padding:0px;}}
 
+.grise{
+  color:#D9D9D9;
+}
 /*/////////// TITRES, TEXTES ///////////*/
 
 h1, h2, #bloc_filtres{
