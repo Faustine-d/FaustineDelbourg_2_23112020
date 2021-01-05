@@ -131,7 +131,8 @@ header  {
     #navigation{
     flex-direction: column-reverse;
     justify-content: space-between;
-    flex-wrap: wrap;}}
+    flex-wrap: wrap;
+    flex:auto;}}
 
 ul{
   display: flex;
@@ -144,7 +145,7 @@ ul{
   margin: 0px;}
     /*phone*/
     @media only screen and (max-width: 600px) {
-    ul{ font-size: 4.25vw; flex-grow: 1; margin-bottom: 13.5vw; display: flex;
+    ul{ font-size: 4.25vw; flex-grow: 1; margin-bottom: 13.5vw; display: flex; flex:auto;
       justify-content: space-around; align-content: stretch; text-decoration-line: underline;
     }} 
 
