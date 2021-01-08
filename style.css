@@ -149,8 +149,8 @@ ul{
       width:100vw ;
       padding: 0px;
       text-align: center;
-      position: relative;
-      left: -27.25vw;
+     
+     
      
     
     }} 
@@ -176,7 +176,8 @@ li{
     li:nth-child(2){
       color: #F2F2F2;
     }
-    li a{padding-left: 10vw;}}
+    li a{padding-left: 10vw;color: ;}
+    li a:first-child{color:#0065FC;}}
 
 li:hover{
   text-decoration-line: underline;
@@ -205,7 +206,7 @@ li:active{
       margin-bottom: 10vw;
       position: relative;
       top: 5vw;
-      left: -50VW;
+      left: -20VW;
     }}
 
 
