@@ -3,6 +3,7 @@
 html{
   font-family:'Raleway', sans-serif;
   color:#000000;
+  background-color: white;
   margin-top:2.5vw;}
     /*phone*/
     @media only screen and (max-width:600px){
@@ -232,7 +233,8 @@ li:active{
   flex-wrap: nowrap;  
   height: 3.5vw;
   margin-top: 1.5vw;
-  border-color: #f2f2f2;}
+  border-color: #f2f2f2;
+  }
     /*phone*/
     @media only screen and (max-width: 600px) {
     #bloc_localisation{height: 14vw; margin-bottom: 6vw;}}
@@ -256,6 +258,7 @@ li:active{
     width: 14vw;
     border-radius: 3.5vw 0vw 0vw 3.5vw;
     font-size: 4.3vw !important;
+    vertical-align: middle;
   }}
 
 #champ_texte{
@@ -286,7 +289,7 @@ input#champ_texte{
 #rechercher{
   margin:0;
   padding: 1vw;
-
+  text-align: center;
   width: 9vw;
   background-color: #0065FC;
   color: #ffffff;
@@ -298,12 +301,13 @@ input#champ_texte{
     @media only screen and (max-width: 600px) {
     #rechercher{
     font-size: 4.8vw;
-    height: 14vw;
-    width: 14vw;
+    height: 13.7vw;
+    width: 13.7vw;
     border-radius: 3.5vw 3.5vw 3.5vw 3.5vw;
     text-indent: -9999px;
     line-height: 0;
-    transform: translateX(-2.3vw);}
+    transform: translateX(-2.3vw);
+    vertical-align: middle !important;}
       /*Remplacer le texte par la loupe*/
       #rechercher::after{
       content: "\f002";
