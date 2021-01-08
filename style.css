@@ -176,8 +176,9 @@ li{
     li:nth-child(2){
       color: #F2F2F2;
     }
-    li a{padding-left: 10vw;color: ;}
-    li a:first-child{color:#0065FC;}}
+    li a{padding-left: 10vw;}
+    li a:nth-child(1){color:#0065FC;}
+  }
 
 li:hover{
   text-decoration-line: underline;
@@ -194,8 +195,6 @@ li:active{
   text-decoration-thickness: 6px;}
 
 #insciption{
-
-
   color: #0065FC;
   font-weight: 700;
   font-size: 1.1vw;}
@@ -248,7 +247,8 @@ li:active{
   border-radius: 1vw 0vw 0vw 1vw;
   background-color: #F2F2F2;
   font-size: 1.1vw !important;
-  text-align: center;}
+  text-align: center;
+  vertical-align: middle;}
     /*phone*/
     @media only screen and (max-width: 600px) {
     #bouton_geolocalisation{
@@ -286,7 +286,7 @@ input#champ_texte{
 #rechercher{
   margin:0;
   padding: 1vw;
-  height: 3.5vw ;
+
   width: 9vw;
   background-color: #0065FC;
   color: #ffffff;
