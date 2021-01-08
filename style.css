@@ -13,7 +13,7 @@ html{
     }}
     
 input,
-button,
+div,
 textarea{
 	margin:0;
 	border:0;
@@ -54,8 +54,6 @@ h1, h2, #bloc_filtres{
     @media only screen and (max-width: 600px){
     h1, h2, #bloc_filtres{
     font-size: 5.9vw;}}
-
-
 
 h3{
   font-weight: 400;
@@ -108,7 +106,7 @@ header  {
   justify-content: flex-start;}
     /*phone*/
     @media only screen and (max-width: 600px) {
-    header{ margin-top: 8.5vw; }}
+    header{ margin-top: 8.5vw; justify-content: stretch;}}
 
 #logo{ 
   width: 6.5vw;
@@ -117,7 +115,7 @@ header  {
     @media only screen and (max-width: 600px) {
     #logo{ width: 25vw;}}
 
-#navigation{
+nav{
   width: 100%;
   margin: 0;
   padding-right: 2vw;
@@ -128,12 +126,12 @@ header  {
   flex-wrap: nowrap;}
     /*phone*/
     @media only screen and (max-width: 600px) {
-    #navigation{
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    nav{
+  width: 70VW;
+  margin-top: 25vw;
+   padding: 0px;
     flex:auto;
-    align-items: stretch;}}
+   }}
 
 ul{
   display: flex;
@@ -148,6 +146,13 @@ ul{
     @media only screen and (max-width: 600px) {
     ul{ font-size: 4.25vw; flex-grow: 1; margin-bottom: 13.5vw; display: flex; flex:auto;
       justify-content: space-around; align-content: stretch; 
+      width:100vw ;
+      padding: 0px;
+      text-align: center;
+      position: relative;
+      left: -27.25vw;
+     
+    
     }} 
 
 
@@ -155,12 +160,23 @@ li{
   margin-right: 4.5vw;}
     /*phone*/
     @media only screen and (max-width: 600px) {
-    li{ width: 100%;
+    li{ 
     display: flex;
     flex-direction: row;
-    border-bottom: solid;
+    border-bottom: solid ;
+    width: 50vw;
+   margin: 0%;
     text-align: center;
-   }}
+    padding: 0px;
+    padding-bottom: 4vw; }}
+
+  @media only screen and (max-width: 600px) { 
+  li:first-child{
+    color:#0065FC;}
+    li:nth-child(2){
+      color: #F2F2F2;
+    }
+    li a{padding-left: 10vw;}}
 
 li:hover{
   text-decoration-line: underline;
@@ -177,21 +193,22 @@ li:active{
   text-decoration-thickness: 6px;}
 
 #insciption{
+
+
   color: #0065FC;
   font-weight: 700;
   font-size: 1.1vw;}
     /*phone*/
     @media only screen and (max-width: 600px) {
-    #insciption{font-size: 4.25vw;
-      margin-top: 5vw;
+    #insciption{
+      font-size: 4.25vw;
       margin-bottom: 10vw;
-      align-self: flex-end;
+      position: relative;
+      top: 5vw;
+      left: -50VW;
     }}
 
-@media only screen and (max-width: 600px) {
-  nav{width: 100%;}
-    
-}
+
 
 /*////////////////////// SECTION HAUT DE PAGE //////////////////////*/
 
@@ -788,19 +805,19 @@ footer{
 
 /*/////////// BOUTONS EFFETS ///////////*/
 
-button:onclick{
+div:onclick{
   outline: 0;
   border: none;
   color: #0065FC;
 }
 
-button:active{
+div:active{
   outline: 0;
   border: none;
   color: #0065FC;
 }
 
-button:enabled{
+div:enabled{
   outline: 0;
 }
 
@@ -813,12 +830,12 @@ button:enabled{
   background-color: #0065FC;
   color: #DEEBFF;}
 
-button.filtres:hover{
+div.filtres:hover{
   background-color: #DEEBFF;
   border-color: #DEEBFF;
   color: #0065FC;}
 
-button.filtres:active{
+div.filtres:active{
   background-color: #0065FC;
   color: #DEEBFF;
   outline: 0;
@@ -842,11 +859,11 @@ input#champ_texte:active{
   border-color: #DEEBFF;
 }
 
-button#rechercher:hover{
+div#rechercher:hover{
   background-color:#DEEBFF;
   color:  #0065FC;}
 
-button#rechercher:focus{
+div#rechercher:focus{
   background-color:#0065FC;
   color: #DEEBFF ;
 }
