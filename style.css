@@ -394,7 +394,7 @@ input#champ_texte{
   .picto{width: 13vw; height: 13vw;
     border-radius: 7vw 7vw 7vw 7vw ;}}
   
-.txt{
+.f_txt{
   display: flex;
   align-items: center;
   align-content: flex-start;
@@ -406,13 +406,8 @@ input#champ_texte{
   font-weight: 700;}
   /*phone*/
   @media only screen and (max-width: 600px) {
-  .txt{font-size: 4.8vw;}}
+  .f_txt{font-size: 4.8vw;}}
   
-.f_txt{
-  font-size: 1.25vw;}
-  /*phone*/
-  @media only screen and (max-width: 600px) {
-  .f_txt{font-size:4.8vw;padding-right:1.4vw;}}
 
 /*/////////// BLOC INFORMATIONS ///////////*/
 
