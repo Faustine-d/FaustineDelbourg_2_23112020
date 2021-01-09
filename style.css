@@ -382,6 +382,7 @@ input#champ_texte{
   border-radius: 2vw 2vw 2vw 2vw ;
   background-color: #DEEBFF;
   color: #0065FC;
+  font-size: 1.4vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -392,7 +393,8 @@ input#champ_texte{
   /*phone*/
   @media only screen and (max-width: 600px) {
   .picto{width: 13vw; height: 13vw;
-    border-radius: 7vw 7vw 7vw 7vw ;}}
+    border-radius: 7vw 7vw 7vw 7vw ;
+    font-size: 5vw;}}
   
 .f_txt{
   display: flex;
@@ -406,7 +408,7 @@ input#champ_texte{
   font-weight: 700;}
   /*phone*/
   @media only screen and (max-width: 600px) {
-  .f_txt{font-size: 4.8vw;}}
+  .f_txt{font-size: 4.8vw; padding-right: 2.3vw;}}
   
 
 /*/////////// BLOC INFORMATIONS ///////////*/
