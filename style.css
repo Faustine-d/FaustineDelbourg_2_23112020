@@ -113,7 +113,9 @@ header  {
   height: 100%;}
     /*phone*/
     @media only screen and (max-width: 600px) {
-    #logo{ width: 25vw;}}
+    #logo{ 
+    width: 25vw;
+    padding-left:5vw;}}
 
 nav{
   width: 100%;
@@ -126,9 +128,9 @@ nav{
     /*phone*/
     @media only screen and (max-width: 600px) {
     nav{
-  width: 70VW;
-  margin-top: 25vw;
-   padding: 0px;
+    width:67.5vw;
+    margin-top: 23vw;
+    padding: 0px;
     flex:auto;
    }}
 
@@ -143,12 +145,19 @@ ul{
   margin: 0px;}
     /*phone*/
     @media only screen and (max-width: 600px) {
-    ul{ font-size: 4.25vw; flex-grow: 1; margin-bottom: 13.5vw; display: flex; flex:auto;
-      justify-content: space-around; align-content: stretch; 
-      width:100vw ;
-      padding: 0px;
-      text-align: center;
-    }} 
+    ul{ 
+    font-size: 4.25vw; 
+    flex-grow: 1; 
+    margin-bottom: 13.5vw; 
+    display: flex; 
+    flex:auto;
+    justify-content: space-around; 
+    align-content: stretch; 
+    width:100vw ;
+    padding: 0px;
+    text-align: center;
+    }
+   } 
 
 
 li{
@@ -160,19 +169,20 @@ li{
     flex-direction: row;
     border-bottom: solid ;
     width: 50vw;
-   margin: 0%;
+    margin: 0%;
     text-align: center;
     padding: 0px;
     padding-bottom: 4vw; }}
 
   @media only screen and (max-width: 600px) { 
   li:first-child{
-    color:#0065FC;}
-    li:nth-child(2){
-      color: #F2F2F2;
-    }
-    li a{padding-left: 10vw;}
-    li a:nth-child(1){color:#0065FC;}
+  color:#0065FC;}
+  li:nth-child(2){
+  color: #F2F2F2;}
+  li a{
+  padding-left: 14vw;}
+  #active{
+  color: #0065FC;}
   }
 
 li:hover{
@@ -187,7 +197,9 @@ li:active{
   text-decoration-line: underline;
   text-underline-offset: -4.3vw;
   -webkit-text-decoration-line:underline;
-  text-decoration-thickness: 6px;}
+  text-decoration-thickness: 6px;
+  }
+
 
 #insciption{
   color: #0065FC;
@@ -200,7 +212,7 @@ li:active{
       margin-bottom: 10vw;
       position: relative;
       top: 5vw;
-      left: -20VW;
+      left: -26vw;
     }}
 
 
@@ -236,8 +248,8 @@ li:active{
 #bouton_geolocalisation{
   margin:0;
   padding: 0;
-  width: 3.5vw ;
-  height: 3.5vw ;
+  width: 3.65vw ;
+  height: 3.65vw ;
   border: 1px solid;
   border-color: #f2f2f2;
   border-radius: 1vw 0vw 0vw 1vw;
@@ -252,9 +264,9 @@ align-items: center;}
     @media only screen and (max-width: 600px) {
     #bouton_geolocalisation{
     height: 14vw;
-    width: 14vw;
+    width: 16vw;
     border-radius: 3.5vw 0vw 0vw 3.5vw;
-    font-size: 4.3vw !important;
+    font-size: 5.5vw !important;
     vertical-align: middle;
   }}
 
@@ -301,8 +313,8 @@ input#champ_texte{
     @media only screen and (max-width: 600px) {
     #rechercher{
     font-size: 4.8vw;
-    height: 13.7vw;
-    width: 13.7vw;
+    height: 14vw;
+    width: 16vw;
     border-radius: 3.5vw 3.5vw 3.5vw 3.5vw;
     text-indent: -9999px;
     line-height: 0;
@@ -402,7 +414,7 @@ input#champ_texte{
   font-size: 1.25vw;}
   /*phone*/
   @media only screen and (max-width: 600px) {
-  .f_txt{font-size:4.8vw;padding-right:1.6vw;}}
+  .f_txt{font-size:4.8vw;padding-right:1.4vw;}}
 
 /*/////////// BLOC INFORMATIONS ///////////*/
 
