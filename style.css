@@ -656,7 +656,7 @@ p.nom{
   display: flex;
   flex-direction: column;
   align-content: space-between;
-  justify-content: space-between;}
+  justify-content: space-between; }
     /*phone*/
     @media only screen and (max-width: 600px) {
     .p_txt{
