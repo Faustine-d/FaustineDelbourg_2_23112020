@@ -15,7 +15,7 @@ html{
     
 input,
 div,
-textarea{
+textarea, button{
 	margin:0;
 	border:0;
 	padding:0;
@@ -810,11 +810,7 @@ footer{
 
 /*/////////// BOUTONS EFFETS ///////////*/
 
-div:onclick{
-  outline: 0;
-  border: none;
-  color: #0065FC;
-}
+
 
 div:active{
   outline: 0;
@@ -823,6 +819,16 @@ div:active{
 }
 
 div:enabled{
+  outline: 0;
+}
+
+button:active{
+  outline: 0;
+  border: none;
+  color: #0065FC;
+}
+
+button:enabled{
   outline: 0;
 }
 
@@ -864,13 +870,13 @@ input#champ_texte:active{
   border-color: #DEEBFF;
 }
 
-div#rechercher:hover{
+button#rechercher:hover{
   background-color:#DEEBFF;
   color:  #0065FC;}
 
-div#rechercher:focus{
+button#rechercher:active{
   background-color:#0065FC;
-  color: #DEEBFF ;
+  color: #FFFFFF ;
 }
 
 article:hover{
