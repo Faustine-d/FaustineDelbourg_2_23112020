@@ -23,6 +23,7 @@ textarea, button{
 	vertical-align:middle;
 	white-space:normal;
   background:none;
+  font-family:'Raleway', sans-serif;
 }
 
 img{
@@ -401,7 +402,8 @@ input#champ_texte{
   text-align: center;
   padding-right: 1vw;
   padding-left: 1vw;
-  font-size: 1.25vw;}
+  font-size: 1.25vw;
+  font-weight: 700;}
   /*phone*/
   @media only screen and (max-width: 600px) {
   .txt{font-size: 4.8vw;}}
@@ -658,7 +660,7 @@ h4.nom{
     /*phone*/
     @media only screen and (max-width: 600px) {
     .p_img{
-    width: 34vw;
+    width: 38vw;
     height: 35vw;
     border-radius: 3.5vw 3.5vw 3.5vw 3.5vw}}
 
@@ -826,17 +828,6 @@ footer{
 /*/////////// BOUTONS EFFETS ///////////*/
 
 
-
-div:active{
-  outline: 0;
-  border: none;
-  color: #0065FC;
-}
-
-div:enabled{
-  outline: 0;
-}
-
 button:active{
   outline: 0;
   border: none;
@@ -856,21 +847,12 @@ button:enabled{
   background-color: #0065FC;
   color: #DEEBFF;}
 
-div.filtres:hover{
-  background-color: #DEEBFF;
-  border-color: #DEEBFF;
-  color: #0065FC;}
-
-div.filtres:active{
-  background-color: #0065FC;
-  color: #DEEBFF;
-  outline: 0;
-  }
 
 .picto:active{
   background-color: #0065FC;
   color: #DEEBFF;
 }
+
 
 input{
   outline: 0;
