@@ -880,9 +880,15 @@ button#rechercher:active{
   color:  #0065FC;
 }
 
+
 article:hover{
-  background-color: #DEEBFF;
-  border-color: #DEEBFF;
- 
+  color:  #0065FC;
 }
 
+.hebergements_populaires:hover{
+  color:  #0065FC;
+}
+
+.p_txt:hover{
+    color:  #0065FC;
+}
