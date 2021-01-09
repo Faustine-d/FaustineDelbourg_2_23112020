@@ -89,10 +89,6 @@ a{
   text-decoration: none;
 }
 
-a:active {
-  color: #0065FC;
-}
-
 a:hover {
   color: #0065FC;
 }
@@ -257,9 +253,9 @@ li:active{
   font-size: 1.1vw !important;
   text-align: center;
   vertical-align: middle;
-display: flex;
-justify-content: center;
-align-items: center;}
+  display: flex;
+  justify-content: center;
+  align-items: center;}
     /*phone*/
     @media only screen and (max-width: 600px) {
     #bouton_geolocalisation{
@@ -284,7 +280,7 @@ align-items: center;}
     @media only screen and (max-width: 600px) {
     #champ_texte{
     font-size: 4.8vw;
-    height: 13.7vw;
+    height: 13.5vw;
     width: 69vw;
     }}
     
@@ -610,13 +606,20 @@ h4.nom{
   flex-direction: row;
   align-items: baseline;
   justify-content: space-between;
-  width: 100%;}
+  width: 98%;}
     /*phone*/
     @media only screen and (max-width: 600px) {
     #p_titres{
     margin-bottom: 7vw;
     width: 98%;
     }}
+
+#chart-line{
+  font-size: 1.6vw;}
+    /*phone*/
+    @media only screen and (max-width: 600px) {
+    #chart-line{
+    font-size: 6vw;}}
 
 #bloc_populaires{
   display: flex;
